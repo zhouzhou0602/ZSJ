@@ -1,0 +1,58 @@
+<!-- 轮播图 -->
+<script type="text/html" id="bannerTemp">
+	<%for(var i=0;i<data.length;i++){%>
+   		<div class="swiper-slide"><img src=<%=data[i].imgUrl%>></div>
+    <%}%>
+</script>
+<!-- 菜单部分 -->
+<script type="text/html" id="menuTemp">
+	<%for(var i=0;i<data.length;i++){%>
+		<li class="banner_nav_li" name="banner_nav_serction<%=i%>">
+			<p class="banner_nav_p banner_nav_p<%=i%>"></p>
+			<h2 class="banner_nav_h2"><%=data[i].title%></h2>
+			<%for(var j=0;j<data[i].mainCity.length;j++){%>
+				<a href="#"><%=data[i].mainCity[j]%></a>
+			<%}%>
+			<span class="banner_nav_span"></span>
+		</li>
+    <%}%>
+</script>
+<!-- 菜单详情部分 -->
+<script type="text/html" id="banner_Details_Template">
+	<%for(var i=0;i<data.length;i++){%>
+		<div class="banner_nav_serction" id="banner_nav_serction<%=i%>">
+		<%if (i!=5) {%>
+			<%for(var j=0;j<data[i].moreCity.length;j++){%>
+	    		<div class="banner_nav_Dcontent">
+	    			<div class="banner_nav_common">
+	    				<h2><%=data[i].moreCity[j].cityName%></h2>
+	    				<ul class="banner_nav_list">
+	    					<li>
+	    						<%for(var n=0;n<data[i].moreCity[j].items.length;n++){%>
+		    						<a href="#"><%=data[i].moreCity[j].items[n]%></a>
+	    						<%}%>
+	    					</li>
+	    				</ul>
+	    			</div>	
+	    		</div>
+    		<%}%>
+    		<img src=<%=data[i].moreCityImg%>>
+		<%}else{%>
+			<%for(var j=0;j<data[i].moreCity.length;j++){%>
+	    		<div class="banner_nav_Dcontent">
+	    			<div class="banner_nav_common">
+	    				<h2><%=data[i].moreCity[j].cityName%></h2>
+	    				<ul class="banner_nav_list">
+	    					<li>
+	    						<%for(var n=0;n<data[i].moreCity[j].items.length;n++){%>
+		    						<a href="#"><img src=<%=data[i].moreCity[j].items[n]%>></a>
+	    						<%}%>
+	    					</li>
+	    				</ul>
+	    			</div>	
+	    		</div>
+    		<%}%>
+		<%}%>	
+    	</div>
+    <%}%>
+</script>

@@ -1,0 +1,15 @@
+@charset "utf-8";
+@font-face{font-family:zworld;src:url(https://common1.qyerstatic.com/zworld/web/common/font/zworld.eot?a2l7hm);src:url(https://common1.qyerstatic.com/zworld/web/common/font/zworld.eot?a2l7hm#iefix) format('embedded-opentype'),url(https://common1.qyerstatic.com/zworld/web/common/font/zworld.ttf?a2l7hm) format('truetype'),url(https://common1.qyerstatic.com/zworld/web/common/font/zworld.woff?a2l7hm) format('woff'),url(https://common1.qyerstatic.com/zworld/web/common/font/zworld.svg?a2l7hm#zworld) format('svg');}
+@font-face{font-family:iconfont_q_layout_headerfooter;src:url(https://static.qyer.com/models/basic/font/iconfont_header/iconfont.eot);src:url(https://static.qyer.com/models/basic/font/iconfont_header/iconfont.eot?#iefix) format('embedded-opentype'),url(https://static.qyer.com/models/basic/font/iconfont_header/iconfont.woff) format('woff'),url(https://static.qyer.com/models/basic/font/iconfont_header/iconfont.ttf) format('truetype'),url(https://static.qyer.com/models/basic/font/iconfont_header/iconfont.svg#iconfont) format('svg')}
+@font-face{
+	font-family: "icon";
+	src:url(//common1.qyerstatic.com/zworld/web/common/font/zworld.eot?a2l7hm);
+	src:url(//common1.qyerstatic.com/zworld/web/common/font/zworld.eot?a2l7hm#iefix) format('embedded-opentype'),url(//common1.qyerstatic.com/zworld/web/common/font/zworld.ttf?a2l7hm) format('truetype'),
+	    url(//common1.qyerstatic.com/zworld/web/common/font/zworld.woff?a2l7hm) format('woff'),
+	    url(//common1.qyerstatic.com/zworld/web/common/font/zworld.svg?a2l7hm#zworld) format('svg');
+}
+*{padding:0;margin: 0;}
+body{font: 12px/1.5 Helvetica,Arial,"微软雅黑",sans-serif;background: #fff;width:100%;height: 100%;color:#323232;text-align: left;}
+ul,ol{list-style:none;}
+a{text-decoration: none;}
+input,img,select,textarea,button{outline: none;resize:none;vertical-align: middle;}
