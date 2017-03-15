@@ -1,0 +1,41 @@
+<script type="text/html" id="cityTemp">
+<%for(var i=0;i<data.length;i++){%>
+	<div class="citydetials">
+		<div class="citybannar">
+			<img src="<%=data[i].imgurl%>">
+		</div>
+		<div class="citydet">
+			<div>
+				<span>京都</span>
+				<div class="citypro">
+					<span style="color:#45C79F"><%=data[i].browseCount%></span>
+					<span>次浏览</span>
+					<span style="color:#45C79F"><%=data[i].soldCount%></span>
+					<span>件已售</span>
+				</div>
+			</div>
+			<div class="cityeat">
+				<a href="#"><%=data[i].title%></a>
+			</div>
+			<div class="cityhist">
+				<ul>
+				<%for(var j=0;j<data[i].introduce.length;j++){%>
+					<li>
+					<i></i><%=data[i].introduce[j]%>
+					</li>
+					
+				<%}%>
+				</ul>
+				<div class="citymoney">
+					<span><%=data[i].oldPrice%><em>元</em></span>
+					<span><%=data[i].newPrice%></span>
+					<span>元起</span>
+				</div>
+			</div>
+			<div class="cityresave">
+				<a href="#">立即预定</a>
+			</div>
+		</div>
+	</div>
+<%}%>
+</script>

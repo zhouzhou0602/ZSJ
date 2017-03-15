@@ -334,6 +334,7 @@ header .header_icons span.header_c:before{
 .cityeat{
 	float: left;
 	width: 710px;
+	height: 78px;
 }
 .cityeat a{
 	font-size: 26px;
@@ -347,16 +348,22 @@ header .header_icons span.header_c:before{
 	float: left;
 }
 .cityhist>ul>li{
+	width: 500px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
 	font-size: 14px;
 	color: #666;
 	line-height: 26px;
 }
 .citymoney{
-	
+	/*position: absolute;*/
 	height: 80px;
-	width: 180px;
+	/*width: 180px;*/
 	float: right;
-	margin-left: 338px;
+	right: 80px;
+	margin-left: 35px;
+	/*margin-top: 14px;*/
 }
 .citymoney span:nth-of-type(1){
 	line-height: 130px;
@@ -379,17 +386,22 @@ header .header_icons span.header_c:before{
 	float: left;
 	width: 710px;
 	height: 56px;
-	margin-top: 14px;
+	bottom: 0px;
+	margin-top: 16px;
 }
 .cityresave>a{
+	/*position: absolute;*/
 	float: right;
+	/*right:89px;*/
 	height: 56px;
 	width: 172px;
+	margin-bottom: 0px;
 	text-align: center;
 	line-height: 56px;
 	font-size: 18px;
 	color: #fff;
 	background-color: #FF7362;
+
 
 }
 .cityhist>ul>li>i{
@@ -405,7 +417,9 @@ header .header_icons span.header_c:before{
 .cityhist>ul>li>i:before {
     content: "\e615";
 }
-
+.city_all{
+	position: relative;
+}
 .citypage{
 	float: left;
 	height: 70px;
