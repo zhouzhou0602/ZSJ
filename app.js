@@ -1,6 +1,8 @@
 var express = require("express"),
 	app = express();
+//静态文件托管
 app.use(express.static("../ZSJ_zz"));
+//默认是home页面
 app.get("/",function(req,res){
 	res.sendFile(__dirname+"/home.html");
 });

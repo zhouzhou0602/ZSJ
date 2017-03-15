@@ -62,3 +62,22 @@ $(".banner_nav_details").load("home_temp.html",function(){
         }
     });
 })
+//机酒自由行
+$(".p_w_box").load("home_temp.html",function(){
+    $.ajax({
+        url:"http://localhost:8080/freeWalk_json",
+        type:"get",
+        dataType:"json",
+        success:function(res){
+            var htmlStr=baidu.template("freeWalk_Template",{data:res});
+            $(".p_w_box").html(htmlStr);
+            $(".p_w_cont").eq(0).show().siblings(".p_w_cont").hide();
+            $(".p_w_menu li").eq(0).addClass("target");
+            $(".p_w_menu li").mouseover(function(){
+                var num = $(this).attr("targetname");
+                $(this).addClass("target").siblings(".p_w_menu li").removeClass("target");
+                $(".p_w_cont").eq(num).show().siblings(".p_w_cont").hide();
+            });
+        }
+    });
+})

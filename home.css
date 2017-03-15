@@ -580,32 +580,32 @@ header .header_icons span.header_c:before{
 	display: block;
     color: #636363;
 }
-.p_w_menu li:first-of-type{
+.p_w_menu li.target{
 	border-bottom: 3px solid #16c1a0;
 }
-.p_w_menu li:first-of-type a{
+.p_w_menu li.target a{
 	color: #00b081;
 }
-#p_w_cont{
+.p_w_cont{
 	width:1160px;
 	height:574px;
 	margin-top: 30px;
 	font-size: 0;
 }
-#p_w_cont ul{
+.p_w_cont ul{
 	width:1180px;
 	height:574px;
 	margin-left: -20px;
     margin-top: -20px;
 }
-#pw_imp{
+.pw_imp{
 	float: left;
     margin: 20px 0 0 20px;
     width:570px;
     height: 267px;
     position:relative;
 }
-#pw_imp img{
+.pw_imp img{
 	width:570px;
 	height:267px;
 }
@@ -754,7 +754,7 @@ header .header_icons span.header_c:before{
 .p_w_more span::before{
 	content: "\e60a"
 }
-#p_w_me{
+.p_w_me{
 	display: block;
 	width:85%;
 	margin: 0 auto;
@@ -765,7 +765,7 @@ header .header_icons span.header_c:before{
     color: #fff;
 }
 
-#p_w_me>a{
+.p_w_me>a{
 	float:left;
 	color: #fff;
     font-size: 16px;
@@ -773,7 +773,7 @@ header .header_icons span.header_c:before{
     line-height: 14px;
     padding:0 10px;
 }
-#p_w_me a:last-of-type{
+.p_w_me a:last-of-type{
 	border:none;
 }
 /*城市玩乐*/

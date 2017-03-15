@@ -56,3 +56,62 @@
     	</div>
     <%}%>
 </script>
+
+<!-- 机酒自由行 -->
+<script type="text/html" id="freeWalk_Template">
+	<div class="p_w_title">
+		<h2>机酒自由行</h2>
+		<p>精选全球最优质机票、酒店、邮轮等旅行产品</p>
+		<ul class="p_w_menu">
+			<%for(var i = 0;i<data.length;i++){%>
+				<li targetname="<%=i%>"><a href="#"><%=data[i].title%></a></li>
+			<%}%>
+		</ul>
+	</div>
+	<%for(var j = 0;j<data.length;j++){%>
+		<div class="p_w_cont">
+			<ul>
+				<li class="pw_imp">
+					<a href="#">
+						<img src="<%=data[j].data[0].imgUrl%>">
+						<div class="imp_po1">
+							<p>机票</p>
+							<p><em><%=data[j].data[0].price%></em>元起</p>
+						</div>
+						<div class="imp_po2">
+							<h3><%=data[j].data[0].title%></h3>
+							<p><%=data[j].data[0].time%></p>
+						</div>
+					</a>
+				</li>
+				<%for(var m = 1;m<data[j].data.length;m++){%>
+					<li class="p_w_lis">
+						<a href="#">
+							<img src="<%=data[j].data[m].imgUrl%>">
+							<div class="imp_po">
+								<p>机票</p>
+								<p><em><%=data[j].data[m].price%></em>元起</p>
+							</div>
+							<div class="p_w_des">
+								<h3><%=data[j].data[m].title%></h3>
+							</div>
+						</a>
+					</li>
+				<%}%>
+				<li class="p_w_more">
+					<div>
+						<a href="#"><p>查看更多</p></a>
+						<a href="#"><p>机酒自由行产品</p></a>
+						<a href="#"><span></span></a>
+						<p class="p_w_me">
+							<a href="#">机票</a>
+							<a href="#">酒店</a>
+							<a href="#">机酒</a>
+							<a href="#">邮轮</a>
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	<%}%>
+</script>
